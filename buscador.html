@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscador</title>
+<script>
+function buscar() {
+    var query = document.getElementById("search").value.toLowerCase();
+    if (query === "vestidos") {
+        window.location.href = "";}
+    else if (query === "Vestido") {
+        window.location.href = "";}
+    else if (query === "pantalones") {
+        window.location.href = "";}
+    else if (query === "Pantalone") {
+        window.location.href = "";}
+    else if(query === "faldas"){
+        window.location.href = ""}
+    else if (query === "Falda") {
+        window.location.href = "";}
+    else if(query === "accesorios"){
+        window.location.href = ""}
+    else if (query === "Accesorio") {
+        window.location.href = "";}
+    else if (query === "Pijamas") {
+        window.location.href = "";}
+    else if(query === "pijama"){
+        window.location.href = ""}
+    else if(query === "Zapatos"){
+        window.location.href = ""}
+    else if(query === "calzado"){
+        window.location.href = ""}
+    else if(query === "sudaderas"){
+        window.location.href = "/Proyecto/menu/sudadera/secsudaderas.html"}
+    else if(query === "Sudadera"){
+        window.location.href = "/Proyecto/menu/sudadera/secsudaderas.html"}
+     
+    else {alert("Lo sentimos, no se encontraron resultados para tu búsqueda.");}
+}
+</script>
+<link rel="stylesheet" href="\Proyecto/style.css"> 
+</head>
+<body>
+<input type="text" id="search" placeholder="Introduce tu búsqueda" class="btnbuscar">
+<button onclick="buscar()" class="btnbuscar separ colblanco">Buscar</button>
+</body>
+</html>

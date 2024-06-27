@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="stylesheet" href="\proyecto/style.css">
+    
+</head>
+<body>
+        <header>
+      <!---logo--->
+        <div class="header-section container">
+            <a href="\proyecto\menu\menu/index.html"> <img src="\proyecto\imagenes/menu.jpg" class="imgmenu"></a>
+            <img class="logo" src="\proyecto\imagenes/logo.jpg" alt="">
+          <h1 class="titlog"><img src="\proyecto\imagenes/titulo.jpg" class="titlogo"></h1>
+          <!---carrito de compras--->
+            <div>
+                <img onclick="showCart(this)" class="cart" src="\proyecto\imagenes/carrito.jpg" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+              
+                <div class="card-items">
+                  
+                </div>
+              
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+                <a href="/proyecto/menu/menu/terminal.html" class="link-button re">Pagar</a>
+          <br><br>
+            </div>
+        </div>
+    </header>
+    
+    <br><br><br><br><br><br>
+
+    <section class="container">
+        <div class="products">
+          
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio1.jpeg" alt="">
+                </div>
+              <p>$<span>400</span></p>
+                <p class="title">Bolsa rosa de Gato</p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+          
+            <div class="carts">
+              
+                <div>
+                  <img src="\proyecto\imagenes\accesorios/accesorio2.jpeg" alt="">
+                </div>
+              <p>$<span>250</span></p>
+                <p class="title"> Gorra negra de Gato </p>
+                <a href="" class="btn-add-cart" data-id="2">Agregar</a><br><br><br>
+            </div>
+          
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio3.jpeg" alt="">
+                    
+                </div>
+              <p>$<span>100</span></p>
+                <p class="title"> Monedero de Gato  </p>
+                <a href="" data-id="3" class="btn-add-cart">Agregar</a><br><br><br>
+                   
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio4.jpeg" alt="">
+               
+                </div>
+              <p>$<span>100</span></p>
+                <p class="title"> Pulcera negra de Gato  </p>
+                <a href="" data-id="4" class="btn-add-cart">Agregar</a><br><br><br>
+                  
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio5.jpeg" alt="">
+                    
+                </div><p>$<span>300</span></p>
+                <p class="title"> Bolsa verde de Gato </p>
+                <a href="" data-id="5" class="btn-add-cart">Agregar</a><br><br><br>
+                  
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio6.jpeg" alt="">
+                    
+                </div><p>$<span>300</span></p>
+                <p class="title"> Anillo en forma de Gato</p>
+                <a href="" data-id="6" class="btn-add-cart">Agregar</a><br><br><br>
+                  
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio7.jpeg" alt="">
+                   
+                </div><p>$<span>100</span></p>
+                <p class="title"> Deadema de Gato  </p>
+                <a href="" data-id="7" class="btn-add-cart">Agregar</a><br><br><br>
+                  
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio8.jpeg" alt="">
+                    
+                </div><p>$<span>200</span></p>
+                <p class="title"> Pulcera de Gato en Pareja </p>
+                <a href="" data-id="8" class="btn-add-cart">Agregar</a><br><br><br>
+                
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio9.jpeg" alt="">
+                    
+                </div><p>$<span>150</span></p>
+                <p class="title"> Arete forma de Gato </p>
+                <a href="" data-id="9" class="btn-add-cart">Agregar</a><br><br><br>
+                
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio10.jpeg" alt="">
+                    
+                </div><p>$<span>300</span></p>
+                <p class="title"> Separador de hojas de Gato </p>
+                <a href="" data-id="10" class="btn-add-cart">Agregar</a><br><br><br>
+                
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="\proyecto/custom.js" ></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="stylesheet" href="\Proyecto/style.css">
+    
+</head>
+<body>
+    <header>
+      <!---logo--->
+        <div class="header-section container">
+            <a href="\proyecto\menu\menu/index.html"> <img src="\proyecto\imagenes/menu.jpg" class="imgmenu"></a>
+            <img class="logo" src="\proyecto\imagenes/logo.jpg" alt="">
+          <h1 class="titlog"><img src="\proyecto\imagenes/titulo.jpg" class="titlogo"></h1>
+          <!---carrito de compras---> 
+            <div>
+                <img onclick="showCart(this)" class="cart" src="\proyecto\imagenes/carrito.jpg" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+              
+                <div class="card-items">
+                  
+                </div>
+              
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+              <a href="/proyecto/menu/menu/terminal.html" class="link-button re">Pagar</a>
+
+          <br><br>
+            </div>
+        </div>
+    </header>
+
+        <script>
+            function buscar() {
+                var query = document.getElementById("search").value.toLowerCase();
+                if (query === "pantalones") {
+                    window.location.href = "/Proyecto/menu/pantalon/secpantalon.html";}
+                else if (query === "Pantalon") {
+                    window.location.href = "/Proyecto/menu/pantalon/secpantalon.html";}
+                else if(query === "accesorios"){
+                    window.location.href = "/Proyecto/menu/accesorios/secaccesorios.html"}
+                else if (query === "vestido") {
+                    window.location.href = "/Proyecto/menu/vestidos/secvestidos.html";}
+                else if(query === "vestidos"){
+                    window.location.href = "/Proyecto/menu/vestidos/secvestidos.html"}
+                else if (query === "Accesorio") {
+                    window.location.href = "/Proyecto/menu/accesorios/secaccesorios.html";}
+                else if (query === "Pijamas") {
+                    window.location.href = "/Proyecto/menu/pijamas/secpijamas.html";}
+                else if(query === "pijama"){
+                    window.location.href = "/Proyecto/menu/pijamas/secpijamas.html"}
+                else if (query === "Playera") {
+                    window.location.href = "/Proyecto/menu/playera/secplayeras.html";}
+                else if(query === "playeras"){
+                    window.location.href = "/Proyecto/menu/playera/secplayeras.html"}
+                else if(query === "Zapatos"){
+                    window.location.href = "/Proyecto/menu/calzado/seccalzado.html"}
+                else if(query === "calzado"){
+                    window.location.href = "/Proyecto/menu/calzado/seccalzado.html"}
+                else if(query === "sudaderas"){
+                    window.location.href = "/Proyecto/menu/sudadera/secsudaderas.html"}
+                else if(query === "Sudadera"){
+                    window.location.href = "/Proyecto/menu/sudadera/secsudaderas.html"}
+                    else if(query === "pagina principal"){
+                    window.location.href = "/Proyecto/pagina principal/paginaprincipal.html"}
+                    else if(query === "capas"){
+                    window.location.href = "/Proyecto/menu/capas/seccapas.html"}
+                    else if(query === "capa"){
+                    window.location.href = "/Proyecto/menu/capasa/seccapas.html"}
+                 
+                else {alert("Lo sentimos, no se encontraron resultados para tu búsqueda.");}
+            }
+            </script><br><br>
+            <input type="text" id="search" placeholder="Introduce tu búsqueda" class="btnbuscar divbusc btnins">
+            <button onclick="buscar()" class="btnbuscar separ colblanco">Buscar</button>
+
+<!--PRODUCTOS-->
+    <section class="container"><br><br>
+<div class="divs"><h1 class="colblanco">Mas popular:</h1></div>
+        <div class="products">
+            <div class="carts">
+                <div>
+                  <img src="/proyecto/imagenes/sudaderas/sudadera2.jpg" alt="" class="imgsudor">
+                </div>
+                <p>$<span>350</span></p>
+                <p class="title">Sudadera estampado de Gato</p>
+                <a href="" data-id="12" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="/proyecto/imagenes/sudaderas/sudadera6.jpg" alt="" class="imgsuda">  
+                </div>
+                <p>$<span>350</span></p>
+                <p class="title">Sudadera sin gorro estampado de Gato</p>
+                <a href="" data-id="16" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\playeras/playera1.jpeg" alt="">
+                </div>
+              <p>$<span>300</span></p>
+                <p class="title">Playera estampado de Gato</p>
+                <a href="" data-id="1" class="btn-add-cart">Agregar</a><br><br><br>
+
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio10.jpeg" alt="">
+                    
+                </div><p>$<span>300</span></p>
+                <p class="title"> Separador de hojas de Gato </p>
+                <a href="" data-id="10" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\calzado/cal7.jpeg" alt="">
+                   
+                </div><p>$<span>300</span></p>
+                <p class="title"> Pantunflas negras de Gato  </p>
+                <a href="" data-id="7" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\capas/capas4.jpeg" alt="">
+               
+                </div>
+              <p>$<span>300</span></p>
+                <p class="title"> Capa negra de Gatos  </p>
+                <a href="" data-id="4" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\accesorios/accesorio5.jpeg" alt="">
+                    
+                </div><p>$<span>300</span></p>
+                <p class="title"> Bolsa verde de Gato </p>
+                <a href="" data-id="5" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\pantalon/pantalon3.webp" alt="">
+                </div>
+              <p>$<span>350</span></p>
+                <p class="title">Pantalon estampado de Gato para bebe</p>
+                <a href="" data-id="43" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\pijama/pijama2.jpeg" alt="">
+                </div>
+              <p>$<span>350</span></p>
+                <p class="title">Pijama estampado de Gato</p>
+                <a href="" data-id="62" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="/proyecto/imagenes/Sudaderas/sudadera9.jpg" alt="">  
+                </div>
+                <p>$<span>300</span></p>
+                <p class="title">Sudadera sin gorro estampado de Gato</p>
+                <a href="" data-id="19" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\vestido/vestido3.jpg" alt="">
+                </div>
+              <p>$<span>610</span></p>
+                <p class="title">Vestido para niña estampado de Gato</p>
+                <a href="" data-id="53" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="\proyecto\imagenes\calzado/cal9.jpeg" alt="">
+                    
+                </div><p>$<span>300</span></p>
+                <p class="title"> Tenis blancos de gato Durmiendo </p>
+                <a href="" data-id="9" class="btn-add-cart">Agregar</a><br><br><br>
+            </div>
+          <!---parte final--->           
+        </div>
+    </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="\proyecto/custom.js" ></script>
+</body>
+</html>

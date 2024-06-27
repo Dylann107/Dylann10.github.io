@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="stylesheet" href="\proyecto/style.css">
+    
+</head>
+<body>
+    <header>
+      <!---logo--->
+        <div class="header-section container">
+            <a href="\proyecto\menu\menu/index.html"> <img src="\proyecto\imagenes/menu.jpg" class="imgmenu"></a>
+            <img class="logo" src="\proyecto\imagenes/logo.jpg" alt="">
+          <h1 class="titlog"><img src="\proyecto\imagenes/titulo.jpg" class="titlogo"></h1>
+          <!---carrito de compras---> 
+        </div>
+    </header>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br><br><br>
+    <form id="shippingForm">
+        <label for="name">Nombre completo:</label>
+        <input class="controls" type="text" id="name" name="name" required><br>
+
+        <label for="phone">Número de Teléfono:</label>
+        <input class="controls" type="tel" id="phone" name="phone" required><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input class="controls" type="email" id="email" name="email" required><br>
+
+        <label for="postalCode">Código Postal:</label>
+        <input class="controls" type="text" id="postalCode" name="postalCode" required><br>
+
+        <label for="address">Calle:</label>
+        <input class="controls" type="text" id="address" name="address" required><br>
+
+        <label for="Method">Método de Pago:</label>
+        <select id="Method" name="Method" required>
+            <option value="">Seleccione</option>
+            <option value="card">Tarjeta de Crédito/Débito</option>
+        </select><br>
+
+        <div id="cardInfo" class="Inf">
+            <label for="cardNumber">Número de Tarjeta:</label>
+            <input class="controls" type="text" id="cardNumber" name="cardNumber"><br>
+
+            <label for="expiryDate">Fecha de Expiración:</label>
+            <input class="controls" type="month" id="expiryDate" name="expiryDate"><br>
+
+        </div>
+
+        
+
+        <br><br><br><br><br>
+
+        <a href="/proyecto/menu/menu/graciasx.html" class="btnfinalizar">FINALIZAR</a>
+    </form>
+    <p id="errorMessage" class="Red"></p>
+</div>
+</section>
+
+<script src="\proyecto/carritoc.js"></script>
+</body>
+</html>
